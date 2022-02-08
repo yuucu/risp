@@ -2,7 +2,7 @@ use std::num::ParseFloatError;
 
 use super::types::*;
 
-pub fn tokenize(expr: String) -> Vec<String> {
+pub fn tokenize(expr: &str) -> Vec<String> {
     expr.replace("(", " ( ")
         .replace(")", " ) ")
         .split_whitespace()
